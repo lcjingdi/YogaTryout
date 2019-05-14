@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F4764FEA9AA6E7E06247BE2 /* Pods_YogaTryout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FFC09675DC973EF9057A7 /* Pods_YogaTryout.framework */; };
+		379919F6228A660500E86187 /* Shows.plist in Resources */ = {isa = PBXBuildFile; fileRef = 379919F5228A660500E86187 /* Shows.plist */; };
+		379919F9228A674700E86187 /* ShowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 379919F8228A674700E86187 /* ShowTableViewCell.m */; };
+		379919FC228A685600E86187 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 379919FB228A685600E86187 /* Show.m */; };
+		379919FF228AC8DA00E86187 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 379919FE228AC8DA00E86187 /* ViewController2.m */; };
+		37991A02228AC8E600E86187 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 37991A01228AC8E600E86187 /* ViewController3.m */; };
+		37991A05228AC8EF00E86187 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 37991A04228AC8EF00E86187 /* ViewController4.m */; };
+		37991A08228AC90900E86187 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 37991A07228AC90900E86187 /* ViewController1.m */; };
+		37E1C05222857C9A004844A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C05122857C9A004844A1 /* AppDelegate.m */; };
+		37E1C05522857C9A004844A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C05422857C9A004844A1 /* ViewController.m */; };
+		37E1C05A22857C9C004844A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C05922857C9C004844A1 /* Assets.xcassets */; };
+		37E1C06022857C9C004844A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C05F22857C9C004844A1 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		157FFC09675DC973EF9057A7 /* Pods_YogaTryout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaTryout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		379919F5228A660500E86187 /* Shows.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Shows.plist; sourceTree = "<group>"; };
+		379919F7228A674700E86187 /* ShowTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowTableViewCell.h; sourceTree = "<group>"; };
+		379919F8228A674700E86187 /* ShowTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowTableViewCell.m; sourceTree = "<group>"; };
+		379919FA228A685600E86187 /* Show.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
+		379919FB228A685600E86187 /* Show.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
+		379919FD228AC8DA00E86187 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		379919FE228AC8DA00E86187 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		37991A00228AC8E600E86187 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		37991A01228AC8E600E86187 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		37991A03228AC8EF00E86187 /* ViewController4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
+		37991A04228AC8EF00E86187 /* ViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
+		37991A06228AC90900E86187 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		37991A07228AC90900E86187 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		37E1C04D22857C9A004844A1 /* YogaTryout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaTryout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E1C05022857C9A004844A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		37E1C05122857C9A004844A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		37E1C05322857C9A004844A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		37E1C05422857C9A004844A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		37E1C05922857C9C004844A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37E1C05E22857C9C004844A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E1C05F22857C9C004844A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A36A20F84F765DAE1ED4808 /* Pods-YogaTryout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaTryout.release.xcconfig"; path = "Target Support Files/Pods-YogaTryout/Pods-YogaTryout.release.xcconfig"; sourceTree = "<group>"; };
+		9DA832F1032A355B1D7CC41E /* Pods-YogaTryout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaTryout.debug.xcconfig"; path = "Target Support Files/Pods-YogaTryout/Pods-YogaTryout.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37E1C04A22857C9A004844A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4764FEA9AA6E7E06247BE2 /* Pods_YogaTryout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C45649463DC927A62274146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157FFC09675DC973EF9057A7 /* Pods_YogaTryout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37E1C04422857C9A004844A1 = {
+			isa = PBXGroup;
+			children = (
+				37E1C04F22857C9A004844A1 /* YogaTryout */,
+				37E1C04E22857C9A004844A1 /* Products */,
+				FD85A46DC44BE48A86699D85 /* Pods */,
+				2C45649463DC927A62274146 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		37E1C04E22857C9A004844A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37E1C04D22857C9A004844A1 /* YogaTryout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37E1C04F22857C9A004844A1 /* YogaTryout */ = {
+			isa = PBXGroup;
+			children = (
+				379919F5228A660500E86187 /* Shows.plist */,
+				37E1C05022857C9A004844A1 /* AppDelegate.h */,
+				37E1C05122857C9A004844A1 /* AppDelegate.m */,
+				37E1C05322857C9A004844A1 /* ViewController.h */,
+				37E1C05422857C9A004844A1 /* ViewController.m */,
+				37991A06228AC90900E86187 /* ViewController1.h */,
+				37991A07228AC90900E86187 /* ViewController1.m */,
+				379919FD228AC8DA00E86187 /* ViewController2.h */,
+				379919FE228AC8DA00E86187 /* ViewController2.m */,
+				37991A00228AC8E600E86187 /* ViewController3.h */,
+				37991A01228AC8E600E86187 /* ViewController3.m */,
+				37991A03228AC8EF00E86187 /* ViewController4.h */,
+				37991A04228AC8EF00E86187 /* ViewController4.m */,
+				37E1C05922857C9C004844A1 /* Assets.xcassets */,
+				37E1C05E22857C9C004844A1 /* Info.plist */,
+				37E1C05F22857C9C004844A1 /* main.m */,
+				379919F7228A674700E86187 /* ShowTableViewCell.h */,
+				379919F8228A674700E86187 /* ShowTableViewCell.m */,
+				379919FA228A685600E86187 /* Show.h */,
+				379919FB228A685600E86187 /* Show.m */,
+			);
+			path = YogaTryout;
+			sourceTree = "<group>";
+		};
+		FD85A46DC44BE48A86699D85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DA832F1032A355B1D7CC41E /* Pods-YogaTryout.debug.xcconfig */,
+				9A36A20F84F765DAE1ED4808 /* Pods-YogaTryout.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37E1C04C22857C9A004844A1 /* YogaTryout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E1C06322857C9C004844A1 /* Build configuration list for PBXNativeTarget "YogaTryout" */;
+			buildPhases = (
+				1BB03D200BD0BE6BE8451682 /* [CP] Check Pods Manifest.lock */,
+				37E1C04922857C9A004844A1 /* Sources */,
+				37E1C04A22857C9A004844A1 /* Frameworks */,
+				37E1C04B22857C9A004844A1 /* Resources */,
+				8FD911EA3B9A65BE03E52B86 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YogaTryout;
+			productName = YogaTryout;
+			productReference = 37E1C04D22857C9A004844A1 /* YogaTryout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37E1C04522857C9A004844A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = EKW;
+				TargetAttributes = {
+					37E1C04C22857C9A004844A1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 37E1C04822857C9A004844A1 /* Build configuration list for PBXProject "YogaTryout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37E1C04422857C9A004844A1;
+			productRefGroup = 37E1C04E22857C9A004844A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37E1C04C22857C9A004844A1 /* YogaTryout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37E1C04B22857C9A004844A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E1C05A22857C9C004844A1 /* Assets.xcassets in Resources */,
+				379919F6228A660500E86187 /* Shows.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB03D200BD0BE6BE8451682 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YogaTryout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD911EA3B9A65BE03E52B86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaTryout/Pods-YogaTryout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaTryout/Pods-YogaTryout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YogaTryout/Pods-YogaTryout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37E1C04922857C9A004844A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379919FC228A685600E86187 /* Show.m in Sources */,
+				37E1C05522857C9A004844A1 /* ViewController.m in Sources */,
+				37E1C06022857C9C004844A1 /* main.m in Sources */,
+				379919F9228A674700E86187 /* ShowTableViewCell.m in Sources */,
+				37E1C05222857C9A004844A1 /* AppDelegate.m in Sources */,
+				379919FF228AC8DA00E86187 /* ViewController2.m in Sources */,
+				37991A02228AC8E600E86187 /* ViewController3.m in Sources */,
+				37991A05228AC8EF00E86187 /* ViewController4.m in Sources */,
+				37991A08228AC90900E86187 /* ViewController1.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		37E1C06122857C9C004844A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37E1C06222857C9C004844A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37E1C06422857C9C004844A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA832F1032A355B1D7CC41E /* Pods-YogaTryout.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99PJ6X3Z7H;
+				INFOPLIST_FILE = YogaTryout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekwing.YogaTryout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		37E1C06522857C9C004844A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A36A20F84F765DAE1ED4808 /* Pods-YogaTryout.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99PJ6X3Z7H;
+				INFOPLIST_FILE = YogaTryout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekwing.YogaTryout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37E1C04822857C9A004844A1 /* Build configuration list for PBXProject "YogaTryout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E1C06122857C9C004844A1 /* Debug */,
+				37E1C06222857C9C004844A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37E1C06322857C9C004844A1 /* Build configuration list for PBXNativeTarget "YogaTryout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E1C06422857C9C004844A1 /* Debug */,
+				37E1C06522857C9C004844A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37E1C04522857C9A004844A1 /* Project object */;
+}

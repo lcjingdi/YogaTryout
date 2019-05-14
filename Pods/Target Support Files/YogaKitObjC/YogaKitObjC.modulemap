@@ -1,0 +1,6 @@
+framework module YogaKitObjC {
+  umbrella header "YogaKitObjC-umbrella.h"
+
+  export *
+  module * { export * }
+}
