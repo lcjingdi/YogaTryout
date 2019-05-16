@@ -115,14 +115,12 @@
     [self.contentView addSubview:episodeImageView];
     
     UIView *summaryView = [[UIView alloc] initWithFrame:CGRectZero];
-    summaryView.backgroundColor = [UIColor redColor];
     [summaryView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         layout.flexDirection = YGFlexDirectionRow;
         layout.padding = YGPointValue(8.0);
     }];
     UILabel *summaryPopularityLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    summaryPopularityLabel.backgroundColor = [UIColor yellowColor];
     summaryPopularityLabel.text = @"★★★★★";
     summaryPopularityLabel.textColor = [UIColor redColor];
     [summaryPopularityLabel configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
@@ -132,7 +130,6 @@
     [summaryView addSubview:summaryPopularityLabel];
     
     UIView *summaryInfoView = [[UIView alloc] initWithFrame:CGRectZero];
-    summaryInfoView.backgroundColor = [UIColor blueColor];
     [summaryInfoView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         layout.flexGrow = 1;
@@ -155,7 +152,6 @@
     [summaryView addSubview:summaryInfoView];
     
     UIView *summaryInfoSpacerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 1)];
-    summaryInfoSpacerView.backgroundColor = [UIColor greenColor];
     [summaryInfoSpacerView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         layout.flexGrow = 1;
