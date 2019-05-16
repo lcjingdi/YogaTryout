@@ -14,23 +14,26 @@
 @interface ViewController1 ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UIImageView *topImage;
-@property (nonatomic, strong) UIView *view1;
+@property (nonatomic, strong) UIImageView *view1;
+@property (nonatomic, strong) UILabel *label1;
+@property (nonatomic, strong) UILabel *label2;
 @property (nonatomic, strong) UIView *view2;
 @property (nonatomic, strong) UIView *view3;
 @property (nonatomic, strong) UIView *view4;
 @property (nonatomic, strong) UIView *view5;
+@property (nonatomic, strong) UIView *view6;
+@property (nonatomic, strong) UIView *view7;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIScrollView *contentScrollView;
 
 @property (nonatomic, strong) NSArray<Show *> *shows;
 
+@property (nonatomic, strong) UILabel *temp1;
+@property (nonatomic, strong) UILabel *temp2;
+
 @end
 
 @implementation ViewController1
-
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,20 +52,60 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     Show *show = self.shows[0];
-    UIImage *image = [UIImage imageNamed:show.image];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
-    imageView.image = image;
+    [self.view addSubview:self.contentScrollView];
+    self.contentScrollView.frame = self.view.bounds;
+    [self.contentScrollView addSubview:self.view1];
     
-    CGFloat imageWidth = image.size.width;
-    CGFloat imageHeight = image.size.height;
+    self.label1 = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.label1.numberOfLines = 0;
+    self.label1.text = @"dasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasasdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasasdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasasdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asddasdf asdf asd";
+    self.label1.textColor = [UIColor redColor];
+    [self.label1 sizeToFit];
+    [self.contentScrollView addSubview:self.label1];
     
-    CGFloat widthScale = imageWidth / self.view.frame.size.width;
+    self.label2 = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.label2.text = @"2010 TV-14 3 Series";
+    self.label2.textColor = [UIColor lightGrayColor];
+    self.label2.numberOfLines = 0;
+    [self.label2 sizeToFit];
+    [self.contentScrollView addSubview:self.label2];
     
-    imageView.frame = CGRectMake(0, 0, imageWidth, imageHeight);
-    
-    [self.view addSubview:imageView];
+    self.label1.frame = CGRectMake(0, CGRectGetMaxY(self.view1.frame) + 10, self.view.frame.size.width, 0);
+    [self.label1 sizeToFit];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    CGRect contentViewRect = CGRectZero;
+    for (UIView *view in self.contentScrollView.subviews) {
+        contentViewRect = CGRectUnion(contentViewRect, view.frame);
+    }
+    self.contentScrollView.contentSize = contentViewRect.size;
+}
+
+- (UIScrollView *)contentScrollView {
+    if (_contentScrollView == nil) {
+        _contentScrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+    }
+    return _contentScrollView;
+}
+- (UIImageView *)view1 {
+    if (_view1 == nil) {
+        Show *show = self.shows[0];
+        UIImage *image = [UIImage imageNamed:show.image];
+        _view1 = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _view1.backgroundColor = [UIColor yellowColor];
+        _view1.image = image;
+        
+//        CGFloat imageWidth = image.size.width;
+//        CGFloat imageHeight = image.size.height;
+        
+//        CGFloat widthScale = imageWidth / self.view.frame.size.width;
+        
+        _view1.frame = CGRectMake(0, 0, self.view.frame.size.width, 200);
+    }
+    return _view1;
 }
 //
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

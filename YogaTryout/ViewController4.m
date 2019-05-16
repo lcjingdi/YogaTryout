@@ -33,6 +33,9 @@
 @property (nonatomic, assign) int showSelectedIndex;
 @property (nonatomic, copy) NSString *selectedShowSeriesLabel;
 
+@property (nonatomic, strong) UILabel  *temp1;
+@property (nonatomic, strong) UILabel  *temp2;
+
 @end
 
 @implementation ViewController4
@@ -104,13 +107,14 @@
     
     CGFloat imageWidth = image.size.width;
     CGFloat imageHeight = image.size.height;
-    
+    episodeImageView.backgroundColor = [UIColor greenColor];
     [episodeImageView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         //        layout.flexGrow = 1;
         layout.width = YGPointValue(self.view.frame.size.width);
         layout.alignItems = YGAlignCenter;
         layout.aspectRatio = imageWidth /imageHeight;
+        layout.alignSelf = YGAlignCenter;
     }];
     [self.contentView addSubview:episodeImageView];
     
@@ -181,11 +185,15 @@
     [self.contentView addSubview:titleView];
     
     UIView *descriptionView = [[UIView alloc] initWithFrame:CGRectZero];
+    descriptionView.backgroundColor = [UIColor yellowColor];
     [descriptionView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         layout.paddingHorizontal = YGPointValue(8.0);
+        layout.paddingVertical = YGPointValue(8.0);
+        layout.flexWrap = YGWrapWrap;
     }];
     UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.temp1 = descriptionLabel;
     descriptionLabel.font = [UIFont systemFontOfSize:14];
     descriptionLabel.numberOfLines = 3;
     descriptionLabel.textColor = [UIColor lightGrayColor];
@@ -198,6 +206,8 @@
     
     NSString *castText = [NSString stringWithFormat:@"Cast: %@",self.showCast];
     UILabel *castLabel = [self showLabelFor:castText font:[UIFont boldSystemFontOfSize:14]];
+    self.temp2 = castLabel;
+    castLabel.numberOfLines = 0;
     [descriptionView addSubview:castLabel];
     
     NSString *creatorText = [NSString stringWithFormat:@"Creators: %@", self.showCreators];

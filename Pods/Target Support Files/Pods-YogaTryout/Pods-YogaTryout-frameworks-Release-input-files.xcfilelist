@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-YogaTryout/Pods-YogaTryout-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework
 ${BUILT_PRODUCTS_DIR}/YogaKitObjC/YogaKitObjC.framework
