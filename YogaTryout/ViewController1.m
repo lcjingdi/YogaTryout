@@ -96,18 +96,18 @@
     [self.label4 sizeToFit];
     [self.contentScrollView addSubview:self.label4];
     
-    self.label5 = [[UILabel alloc] initWithFrame:CGRectZero];
-    self.label5.text = show.detail;
-    self.label5.textColor = [UIColor lightGrayColor];
-    self.label5.frame = CGRectMake(0 , CGRectGetMaxY(self.label4.frame) + 10, self.contentScrollView.frame.size.width, 0);
-    self.label5.numberOfLines = 0;
-    [self.label5 sizeToFit];
-    [self.contentScrollView addSubview:self.label5];
+//    self.label5 = [[UILabel alloc] initWithFrame:CGRectZero];
+//    self.label5.text = show.detail;
+//    self.label5.textColor = [UIColor lightGrayColor];
+//    self.label5.frame = CGRectMake(0 , CGRectGetMaxY(self.label4.frame) + 10, self.contentScrollView.frame.size.width, 0);
+//    self.label5.numberOfLines = 0;
+//    [self.label5 sizeToFit];
+//    [self.contentScrollView addSubview:self.label5];
     
     self.label6 = [[UILabel alloc] initWithFrame:CGRectZero];
     self.label6.text = @"Cast: Benedict Cumberbatch, Martin Freeman, Una Stubbs";
     self.label6.textColor = [UIColor lightGrayColor];
-    self.label6.frame = CGRectMake(0, CGRectGetMaxY(self.label5.frame) + 10, self.contentScrollView.frame.size.width, 0);
+    self.label6.frame = CGRectMake(0, CGRectGetMaxY(self.label4.frame) + 10, self.contentScrollView.frame.size.width, 0);
     self.label6.numberOfLines = 0;
     [self.label6 sizeToFit];
     [self.contentScrollView addSubview:self.label6];
@@ -140,6 +140,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.frame = CGRectMake(0, CGRectGetMaxY(self.button1.frame) + 10, self.view.frame.size.width, 400);
     [self.contentScrollView addSubview:self.tableView];
 }
 
@@ -190,22 +191,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-    cell.textLabel.text = self.shows[indexPath.row];
+    cell.textLabel.text = self.shows[indexPath.row].title;
     return cell;
-}
-
-- (UILabel *)showLabelFor:(NSString *)text font:(UIFont *)font {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
-
-    label.font = font;
-    label.textColor = [UIColor redColor];
-    label.text = text;
-    [label configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.isEnabled = YES;
-        layout.marginBottom = YGPointValue(5.0);
-    }];
-
-    return label;
 }
 
 @end

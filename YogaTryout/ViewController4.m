@@ -110,7 +110,7 @@
     episodeImageView.backgroundColor = [UIColor greenColor];
     [episodeImageView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
-        //        layout.flexGrow = 1;
+                layout.flexGrow = 1;
 //        layout.marginLeft = YGPointValue(4.0);
 //        layout.marginRight = YGPointValue(4.0);
         layout.width = YGPointValue(self.view.frame.size.width);
@@ -193,17 +193,16 @@
         layout.paddingVertical = YGPointValue(8.0);
         layout.flexWrap = YGWrapWrap;
     }];
-    UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    self.temp1 = descriptionLabel;
-    descriptionLabel.font = [UIFont systemFontOfSize:14];
-    descriptionLabel.numberOfLines = 3;
-    descriptionLabel.textColor = [UIColor lightGrayColor];
-    descriptionLabel.text = show.detail;
-    [descriptionLabel configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.isEnabled = YES;
-        layout.marginBottom = YGPointValue(5.0);
-    }];
-    [descriptionView addSubview:descriptionLabel];
+//    UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+//    descriptionLabel.font = [UIFont systemFontOfSize:14];
+//    descriptionLabel.numberOfLines = 3;
+//    descriptionLabel.textColor = [UIColor lightGrayColor];
+//    descriptionLabel.text = show.detail;
+//    [descriptionLabel configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+//        layout.isEnabled = YES;
+//        layout.marginBottom = YGPointValue(5.0);
+//    }];
+//    [descriptionView addSubview:descriptionLabel];
     
     NSString *castText = [NSString stringWithFormat:@"Cast: %@",self.showCast];
     UILabel *castLabel = [self showLabelFor:castText font:[UIFont boldSystemFontOfSize:14]];
