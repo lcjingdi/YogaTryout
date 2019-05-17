@@ -47,7 +47,7 @@
     for (UIView *view in _contentView.subviews) {
         contentViewRect = CGRectUnion(contentViewRect, view.frame);
     }
-    _contentView.contentSize = contentViewRect.size;
+    _contentView.contentSize = CGSizeMake(contentViewRect.size.width, contentViewRect.size.height);
 }
 
 - (void)defaultValue {
@@ -69,7 +69,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Frame 布局";
+    self.title = @"Flex 布局";
     [self demo1];
     //        [self demo2];
 }
@@ -111,8 +111,10 @@
     [episodeImageView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         //        layout.flexGrow = 1;
+//        layout.marginLeft = YGPointValue(4.0);
+//        layout.marginRight = YGPointValue(4.0);
         layout.width = YGPointValue(self.view.frame.size.width);
-        layout.alignItems = YGAlignCenter;
+//        layout.alignItems = YGAlignCenter;
         layout.aspectRatio = imageWidth /imageHeight;
         layout.alignSelf = YGAlignCenter;
     }];
@@ -185,7 +187,6 @@
     [self.contentView addSubview:titleView];
     
     UIView *descriptionView = [[UIView alloc] initWithFrame:CGRectZero];
-    descriptionView.backgroundColor = [UIColor yellowColor];
     [descriptionView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         layout.paddingHorizontal = YGPointValue(8.0);
